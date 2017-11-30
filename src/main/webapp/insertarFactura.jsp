@@ -91,6 +91,34 @@
 
                                     </select>
                                 </p>
+                                <p><span>Tipo de pago</span>
+                                    <select class="contact" name="tipoPago">
+                                        <%     //Si la variable que me deben enviar existe  
+                                            if (request.getAttribute("fp") != null) {
+                                                //Capturando informacion variable que me estan enviado.    
+                                                ArrayList<FormaPago> pagos = (ArrayList<FormaPago>) request.getAttribute("fp");
+                                                //Existan activos
+                                                if (pagos != null) {
+                                                    for (FormaPago fpago : pagos) {
+                                        %>
+                                        <option value="<%=fpago.getFormarPago()%>"><%=fpago.getFormarPago()%>
+
+                                        </option>
+                                        <%
+                                            }
+                                        } else {
+                                        %>
+                                        <h1>inserte bien</h1>
+                                        <%
+                                                }
+                                            }
+
+                                        %>
+
+                                    </select>
+                                </p>
+
+                                
                                 <p><span>Nombre vendedor</span>
                                    <input class="contact" type="text" name="nombreVende" value="" />
                                 </p>
