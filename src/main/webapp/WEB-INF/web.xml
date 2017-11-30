@@ -48,6 +48,10 @@
         <servlet-name>verDeseos</servlet-name>
         <servlet-class>Controladores.verDeseos</servlet-class>
     </servlet>
+    <servlet>
+    <servlet-name>ControlPago</servlet-name>
+        <servlet-class>Controladores.ControlPago</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ControlinserLibro</servlet-name>
         <url-pattern>/ControlinserLibro</url-pattern>
@@ -95,6 +99,10 @@
     <servlet-mapping>
         <servlet-name>verDeseos</servlet-name>
         <url-pattern>/verDeseos</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ControlPago</servlet-name>
+        <url-pattern>/ControlPago</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
