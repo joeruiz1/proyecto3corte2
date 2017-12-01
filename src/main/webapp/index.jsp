@@ -66,7 +66,7 @@
                                         </ul>
                                     </li>
 
-                                    <li><a href="CrearFactura"><img src="img/splash_icon3.png" alt="" class="menu_img"><img src="img/splash_icon3_over.png" alt="" class="menu_img_over"><div class="base_text">Facturar</div><div class="num_text">03</div></a></li>
+                                    <li><a href="FormaPago.jsp"><img src="img/splash_icon3.png" alt="" class="menu_img"><img src="img/splash_icon3_over.png" alt="" class="menu_img_over"><div class="base_text">Facturar</div><div class="num_text">03</div></a></li>
                                     <li><a href="InsertarEmpleados.jsp"><img src="img/splash_icon4.png" alt="" class="menu_img"><img src="img/splash_icon4_over.png" alt="" class="menu_img_over"><div class="base_text">Ingresar Empleado</div><div class="num_text">04</div></a></li>
                                     <li><a href="OrdenarAutor"><img src="img/splash_icon2.png" alt="" class="menu_img"><img src="img/splash_icon2_over.png" alt="" class="menu_img_over"><div class="base_text">Ordenar Libros</div><div class="num_text">05</div></a></li>
                                     <li><a href="CrearDeseos"><img src="img/splash_icon6.png" alt="" class="menu_img"><img src="img/splash_icon6_over.png" alt="" class="menu_img_over"><div class="base_text">Deseos</div><div class="num_text">06</div></a></li>
