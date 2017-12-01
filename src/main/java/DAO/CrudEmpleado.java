@@ -120,6 +120,29 @@ public class CrudEmpleado {
 
         return em;
     }
+     public List<Empleado> mostrarEmpladosUsados() {
+        List<Empleado> users = new ArrayList<Empleado>();
+        try {
+            System.out.println("LLegue hasta aca olii");
+            Statement statement = connection.createStatement();
+
+            ResultSet rs = statement.executeQuery("select empleado.nombre,empleado.cedula,empleado.`contraseña`,empleado.usuario from empleado inner join factura using(cedula) right join libro on(libro.id_libro=factura.idLi) where estado='usado'; ");
+            while (rs.next()) {
+                Empleado li = new Empleado();
+                li.setNombre(rs.getString("nombre"));
+                li.setCedula(rs.getInt("cedula"));
+                li.setContrasena(rs.getString("contraseña"));
+                li.setUsuario(rs.getString("usuario"));
+
+                users.add(li);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return users;
+    }
+
 
 }
 
